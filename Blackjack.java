@@ -18,7 +18,7 @@ public class Blackjack {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       /* //opretter variabler
+        //opretter variabler
         boolean spil = true;
         int dKort1, dKort2, dTotal, pKort1, pKort2, pTotal;
 
@@ -132,4 +132,4 @@ public class Blackjack {
             System.out.println("Det blev uafgjort du tabte ikke men du vand heller ikke");
         }
     }
-} */
+} 

@@ -63,13 +63,16 @@ public class Card {
     }
 
     public void Compare() {
-        if (dTotal < pTotal || dTotal > 21) {
+        if (dTotal == pTotal) {
+            System.out.println("Det blev uafgjort du tabte ikke men du vand heller ikke");
+        } else if (dTotal < pTotal) {
             System.out.println("\nDu vandt tillykke\ndu havde: " + pTotal + " Dealeren havde: " + dTotal);
         } else if (dTotal > pTotal) {
             System.out.println("\nDu tabte bedre held næste gang\ndu havde: " + pTotal + " Dealeren havde: " + dTotal);
-        } else if (dTotal == pTotal) {
-            System.out.println("Det blev uafgjort du tabte ikke men du vand heller ikke");
+        } else if (dTotal > 21) {
+            System.out.println("peepee");
         }
+        
     }
 
     public int GetDTotal() {

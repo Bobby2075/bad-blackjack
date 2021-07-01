@@ -42,9 +42,11 @@ public class Game {
         int thePTotal = card.GetTotal();
         check(gaming, thePTotal, theDTotal);
            
-
+        
             // gaming = false;
         } while (gaming);
+       
+
     }
 
     public static boolean check(boolean gaming, int pTotal, int dTotal) {
@@ -62,6 +64,9 @@ public class Game {
         } else {
             gaming = true;
         }
+        
+        //System.out.print("\n"+Integer.toString(pTotal));
+        //System.out.print("\n"+Integer.toString(dTotal));
 
         return gaming;
     }

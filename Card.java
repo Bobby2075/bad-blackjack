@@ -7,9 +7,9 @@ public class Card {
     public int pTotal, dTotal;
 
     public Card() {
-        System.out.println("Der bliver nu trukket fire kort \nTo til dig og to til dealeren");
-        Deal();
-        System.out.println(" test: kort" + this);
+        //System.out.println("Der bliver nu trukket fire kort \nTo til dig og to til dealeren");
+        //Deal();
+        //System.out.println(" test: kort" + this);
     }
 
     public void Deal() {
@@ -62,6 +62,15 @@ public class Card {
         } while (stand);
     }
 
+    public void Compare() {
+        if (dTotal < pTotal || dTotal > 21) {
+            System.out.println("\nDu vandt tillykke\ndu havde: " + pTotal + " Dealeren havde: " + dTotal);
+        } else if (dTotal > pTotal) {
+            System.out.println("\nDu tabte bedre held næste gang\ndu havde: " + pTotal + " Dealeren havde: " + dTotal);
+        } else if (dTotal == pTotal) {
+            System.out.println("Det blev uafgjort du tabte ikke men du vand heller ikke");
+        }
+    }
 
     public int GetDTotal() {
         return dTotal;
